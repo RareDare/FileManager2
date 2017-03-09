@@ -1,21 +1,36 @@
-/**
- * Created by tester on 3/2/17.
- */
+import java.io.File;
+
 public class FileManager {
+
     public static void main(String[] args) {
+        File f = null;
+        boolean bool = false;
 
-    }
+        try {
 
-    public void createFile(){
+            // create new file
+            f = new File("testFileForHillel.txt");
 
-    }
-    public void deleteFile(){
+            // tries to create new file in the system
+            bool = f.createNewFile();
 
-    }
-    public void editName(){
+            // prints
+            System.out.println("File created: "+bool);
 
-    }
-    public void findName(){
+            // deletes file from the system
+            f.delete();
 
+            // delete() is invoked
+            System.out.println("delete() method is invoked");
+
+            // tries to create new file in the system
+            bool = f.createNewFile();
+
+            // print
+            System.out.println("File created: "+bool);
+
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
     }
 }
