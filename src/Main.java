@@ -4,9 +4,9 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         // write your code here
-        System.out.println("1 Create file");
-        System.out.println("2 Delete file");
-        System.out.println("3 Rename file");
+        System.out.println("1 Create files");
+        System.out.println("2 Delete files");
+        System.out.println("3 Rename files");
         System.out.println("4 Find word");
         System.out.println("5 Replace word");
         System.out.println("0 Exit");
